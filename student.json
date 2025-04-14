@@ -1,0 +1,55 @@
+{
+  "@context": [
+    "https://www.w3.org/ns/credentials/v2",
+    {
+      "@version": 1.1,
+      "@protected": true,
+
+      "StudentCredential": {
+        "@id": "https://nandeesh778.github.io/my-files/welearntt-courses.json#StudentCredential",
+        "@context": {
+          "uuid": "schema:identifier",
+          "email": "schema:email",
+          "cFullname": "schema:name",
+          "dateRegistered": {
+            "@id": "schema:dateCreated",
+            "@type": "xsd:dateTime"
+          },
+          "courses": {
+            "@id": "schema:hasCourse",
+            "@container": "@list",
+            "@context": {
+              "courseName": "schema:name",
+              "courseHours": {
+                "@id": "schema:timeRequired",
+                "@type": "xsd:duration"
+              },
+              "skillLevel": "schema:educationalLevel",
+              "courseProgress": {
+                "@id": "schema:percentComplete",
+                "@type": "xsd:decimal"
+              },
+              "courseGrade": {
+                "@id": "schema:ratingValue",
+                "@type": "xsd:string"
+              },
+              "status": "schema:courseMode",
+              "completionDate": {
+                "@id": "schema:dateCompleted",
+                "@type": "xsd:date"
+              },
+              "certificateExpirationDate": {
+                "@id": "schema:validThrough",
+                "@type": "xsd:date"
+              }
+            }
+          },
+          "learningPartner": "schema:provider"
+        }
+      },
+
+      "schema": "https://schema.org/",
+      "xsd": "http://www.w3.org/2001/XMLSchema#"
+    }
+  ]
+}
