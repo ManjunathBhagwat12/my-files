@@ -5,7 +5,6 @@
 
     "type": "@type",
     "schema": "https://schema.org/",
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
 
     "StudentCredential": {
       "@id": "https://manjunathbhagwat12.github.io/my-files/courses.json#StudentCredential"
@@ -14,10 +13,7 @@
     "uuid": "schema:identifier",
     "email": "schema:email",
     "cFullname": "schema:name",
-    "dateRegistered": {
-      "@id": "schema:dateCreated",
-      "@type": "xsd:dateTime"
-    },
+    "dateRegistered": "schema:dateCreated",
 
     "courses": {
       "@id": "schema:hasCourse",
@@ -26,27 +22,12 @@
 
     "learningPartner": "schema:provider",
     "courseName": "schema:name",
-    "courseHours": {
-      "@id": "schema:timeRequired",
-      "@type": "xsd:duration"
-    },
+    "courseHours": "schema:timeRequired",
     "skillLevel": "schema:educationalLevel",
-    "courseProgress": {
-      "@id": "schema:percentComplete",
-      "@type": "xsd:decimal"
-    },
-    "courseGrade": {
-      "@id": "schema:ratingValue",
-      "@type": "xsd:string"
-    },
+    "courseProgress": "schema:percentComplete",
+    "courseGrade": "schema:ratingValue",
     "status": "schema:courseMode",
-    "completionDate": {
-      "@id": "schema:dateCompleted",
-      "@type": "xsd:date"
-    },
-    "certificateExpirationDate": {
-      "@id": "schema:validThrough",
-      "@type": "xsd:date"
-    }
+    "completionDate": "schema:dateCompleted",
+    "certificateExpirationDate": "schema:validThrough"
   }
 }
